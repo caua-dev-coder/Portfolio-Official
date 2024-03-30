@@ -5,14 +5,14 @@
 }
 
 .sobre-mim .imagem-sobre-mim .img-box {
-    padding: 15px;
-    border-radius: 5px;
+    padding: none;
+    border-radius: none;
     text-align: center;
 }
 
 .sobre-mim .imagem-sobre-mim img {
-    border: 10px solid transparent;
-    border-radius: 5px;
+    border: 10px solid var(--cor-primaria);
+    border-radius: none;
 }
 
 .sobre-mim .informacoes-sobre-mim {    

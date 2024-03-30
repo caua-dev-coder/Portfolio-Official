@@ -1,242 +1,338 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./src/imagens/favicon.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <title>Caua Tavella - Desenvolvedor Frontend</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ricardo Hofstetter Dias - Desenvolvedor Frontend</title>
+    <link rel="stylesheet" href="src/css/font-awesome.css" />
+    <link rel="stylesheet" href="src/css/reset.css" />
 
-  <link rel="stylesheet" href="src/css/font-awesome.css" />
-  <link rel="stylesheet" href="src/css/reset.css" />
-  
-  <!-- Global -->
-  <link rel="stylesheet" href="src/css/globais.css" />
-  <link rel="stylesheet" href="src/css/variaveis.css" />
-  <link rel="stylesheet" href="src/css/secoes/header.css" />
-  <link rel="stylesheet" href="src/css/secoes/home.css" />
-  <link rel="stylesheet" href="src/css/secoes/sobre.css" />
-  <link rel="stylesheet" href="src/css/secoes/habilidades.css" />
-  <link rel="stylesheet" href="src/css/secoes/projetos.css" />
-  <link rel="stylesheet" href="src/css/secoes/footer.css" />
+    <!-- Global -->
+    <link rel="stylesheet" href="src/css/globais.css" />
+    <link rel="stylesheet" href="src/css/variaveis.css" />
+    <link rel="stylesheet" href="src/css/secoes/header.css" />
+    <link rel="stylesheet" href="src/css/secoes/home.css" />
+    <link rel="stylesheet" href="src/css/secoes/sobre.css" />
+    <link rel="stylesheet" href="src/css/secoes/habilidades.css" />
+    <link rel="stylesheet" href="src/css/secoes/projetos.css" />
+    <link rel="stylesheet" href="src/css/secoes/footer.css" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+  </head>
 
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="row justify-content-between alinhar-itens-no-centro">
-        <a href="#">
-          <h1 class="logo">RD</h1>
-        </a>
-        <nav>
-          <input id="menu-hamburguer" type="checkbox" />
-
-          <label for="menu-hamburguer">
-            <div class="menu">
-              <span class="hamburguer"></span>
-            </div>
-          </label>
-          <ul>
-            <li><a href="#sobre-mim">Sobre mim</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#projetos">Meus projetos</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <section class="home">
-    <div class="container">
-      <div class="row full-screen alinhar-itens-no-centro">
-        <div class="texto-home">
-          <p>Olá 🖖,</p>
-          <h1>Sou o Ricardo Dias</h1>
-          <h2>Desenvolvedor Frontend</h2>
-
-          <div class="redes-sociais">
-            <a href="#" class="outer-shadow"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" class="outer-shadow"><i class="fab fa-github"></i></a>
-            <a href="#" class="outer-shadow"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-
-        <div class="img-home">
-          <div class="img-box inner-shadow">
-            <img class="outer-shadow" src="src/imagens/foto-perfil.png" alt="foto do perfil do Ricardo" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="sobre-mim section" id="sobre-mim">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <h2>Sobre mim</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="imagem-sobre-mim">
-          <div class="img-box inner-shadow">
-            <img src="src/imagens/foto-perfil.png" alt="foto sobre mim" class="outer-shadow" />
-          </div>
-        </div>
-        <div class="informacoes-sobre-mim">
-          <p>
-            <strong>Olá! Me chamo Ricardo Dias e sou um desenvolvedor frontend em
-              formação!</strong>
-              Gosto MUITO da área de tecnologia, e tenho certeza que posso contribuir em qualquer time com as minhas habilidades.
-          </p>
-
-          <p>
-           Estou sempre me desafiando coim novos projetos e participando de comunidades de programação para buscar feedback de outros desenvolvedores e desenvolvedoras. Além de tentar ajudar essas pessoas com o que eu já aprendi. 😁
-          </p>
-
-          <p>
-            Ah, gosto de jogos, filmes, séries, animes e outras nerdices. 💜
-          </p>
-
-          <div class="botoes">
-            <a target="_blank" href="/src/arquivos/cv.pdf" class="botao outer-shadow">Veja meu CV</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="habilidades section" id="habilidades">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <h2>Habilidades</h2>
-        </div>
-      </div>
-
-      <div class="container-habilidades">
-        <div class="informacoes javascript">
-          <div class="logo">
-            <i class="devicon devicon-javascript-plain" id="javascript"></i>
-          </div>
-          <h3>JavaScript</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur ex
-            reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia atque
-            dignissimos possimus!</p>
-        </div>
-
-        <div class="informacoes html">
-          <div class="logo">
-            <i class="devicon devicon-html5-plain-wordmark" id="html"></i>
-          </div>
-          <h3>HTML5</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur ex
-            reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia atque
-            dignissimos possimus!</p>
-        </div>
-
-        <div class="informacoes css">
-          <div class="logo">
-            <i class="devicon devicon-css3-plain-wordmark" id="css"></i>
-          </div>
-          <h3>CSS3</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur ex
-            reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia atque
-            dignissimos possimus!</p>
-        </div>
-
-        <div class="informacoes github">
-          <div class="logo">
-            <i class="devicon devicon-github-original" id="github"></i>
-          </div>
-          <h3>GitHub</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur ex
-            reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia atque
-            dignissimos possimus!</p>
-        </div>
-
-        <div class="informacoes git">
-          <div class="logo">
-            <i class="devicon devicon-git-plain" id="git"></i>
-          </div>
-          <h3>Git</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur ex
-            reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia atque
-            dignissimos possimus!</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="projetos section" id="projetos">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <h2>Meus projetos</h2>
-        </div>
-      </div>
-
-      <div class="container-projetos">
-        <div class="projeto">        
-          <a href="https://github.com">
-            <img src="https://via.placeholder.com/515X700" alt="Nome do projeto" />
-            <h3>Projeto 1</h3>
-            <div class="informacoes-projeto">          
-              <p>Projeto feito usando HTML, CSS e JavaScript</p>
-              <p>🔗 Ver no GitHub Pages</p>
-            </div>     
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row justify-content-between alinhar-itens-no-centro">
+          <a href="#">
+            <h1 class="logo">CT</h1>
           </a>
-        </div>
+          <nav>
+            <input id="menu-hamburguer" type="checkbox" />
 
-        <div class="projeto">        
-          <a href="https://github.com">
-            <img src="https://via.placeholder.com/515X700" alt="Nome do projeto" />
-            <h3>Projeto 2</h3>
-            <div class="informacoes-projeto">          
-              <p>Lorem ipsum</p>
-              <p>🔗 Ver no GitHub Pages</p>
-            </div>      
-          </a>          
-        </div>
-
-        <div class="projeto">     
-          <a href="https://github.com">
-            <img src="https://via.placeholder.com/515X700" alt="Nome do projeto" />
-            <h3>Projeto 3</h3>
-            <div class="informacoes-projeto">
-              <p>Lorem ipsum</p>
-              <p>🔗 Ver no GitHub Pages</p>
-            </div>
-          </a>   
-        </div>
-
-        <div class="projeto">
-          <a href="https://github.com">
-            <img src="https://via.placeholder.com/515X700" alt="Nome do projeto" />
-            <h3>Projeto 4</h3>
-            <div class="informacoes-projeto">
-              <p>Lorem ipsum</p>
-              <p>🔗 Ver no GitHub Pages</p>
-            </div>
-          </a>
+            <label for="menu-hamburguer">
+              <div class="menu">
+                <span class="hamburguer"></span>
+              </div>
+            </label>
+            <ul>
+              <li><a href="#sobre-mim">Sobre mim</a></li>
+              <li><a href="#habilidades">Habilidades</a></li>
+              <li><a href="#projetos">Meus projetos</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <footer class="footer">
-    <div class="container">
-      <h2>Me envie uma mensagem!</h2>
-      <div class="redes-sociais">
-        <a href="#" class="outer-shadow"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
-        <a href="#" class="outer-shadow"><i class="fab fa-github"></i></a>
-        <a href="#" class="outer-shadow"><i class="fab fa-instagram"></i></a>
+    <section class="home">
+      <div class="container">
+        <div class="row full-screen alinhar-itens-no-centro">
+          <div class="texto-home">
+            <p>Olá 🖖,</p>
+            <h1>Sou o Cauã Tavella</h1>
+            <h2><span style="color: #7433d5;">Desenvolvedor Frontend</span></h2>
+
+            <div class="redes-sociais">
+              <a
+                href="https://www.linkedin.com/in/cau%C3%A3-tavella-456607242/"
+                class="outer-shadow"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://api.whatsapp.com/send?phone=5519971265295&text=Eai%20Caua,%20podemos%20conversar?"
+                class="outer-shadow"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="https://github.com/caua-dev-coder" class="outer-shadow"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://www.instagram.com/dev.kiyo/" class="outer-shadow"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="img-home">
+            <div class="img-box inner-shadow">
+              <img
+                class="outer-shadow"
+                src="src/imagens/perfil home 2.png"
+                alt="foto do perfil do Caua"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
+    </section>
+    <section class="sobre-mim section" id="sobre-mim">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>Sobre mim</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="imagem-sobre-mim">
+            <div class="img-box inner-shadow">
+              <img
+                src="src/imagens/perfil.jpg"
+                alt="foto sobre mim"
+                class="outer-shadow"
+              />
+            </div>
+          </div>
+          <div class="informacoes-sobre-mim">
+            <p>
+              <strong
+                >Olá! Me chamo Cauã Tavella e sou um desenvolvedor frontend em
+                formação!</strong
+              >
+              Gosto MUITO da área de tecnologia, e tenho certeza que posso
+              contribuir em qualquer time com as minhas habilidades.
+            </p>
 
+            <p>
+              Estou sempre me desafiando com novos projetos e participando de
+              comunidades de programação para buscar feedback de outros
+              desenvolvedores e desenvolvedoras. Além de tentar ajudar essas
+              pessoas com o que eu já aprendi. 😁
+            </p>
+
+            <p>
+              Ah, gosto de jogos, filmes, séries, animes e outras nerdices. 💜
+            </p>
+
+            <div class="botoes">
+              <a
+                target="_blank"
+                href="https://drive.google.com/file/d/1gk_kfeLO8WHU_pjSMP-Ypja4WJs1hd1x/view?usp=drive_link"
+                class="botao outer-shadow"
+                >Veja meu CV</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="habilidades section" id="habilidades">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>Habilidades</h2>
+          </div>
+        </div>
+
+        <div class="container-habilidades">
+          <div class="informacoes javascript">
+            <div class="logo">
+              <i class="devicon devicon-javascript-plain" id="javascript"></i>
+            </div>
+            <h3>JavaScript</h3>
+            <p>
+              Tenho habilidades avançadas em JavaScript, capaz de criar
+              interfaces dinâmicas, manipular o DOM eficientemente e lidar com
+              programação assíncrona. Uso frameworks como React para desenvolver
+              aplicações web modernas e escaláveis, adaptando-me facilmente a
+              novas tecnologias e tendências.
+            </p>
+          </div>
+
+          <div class="informacoes html">
+            <div class="logo">
+              <i class="devicon devicon-html5-plain-wordmark" id="html"></i>
+            </div>
+            <h3>HTML5</h3>
+            <p>
+              Tenho habilidades avançadas em HTML5, capaz de criar estruturas
+              web semânticas, formulários interativos e elementos de mídia
+              integrados. Utilizo as últimas práticas e recursos do HTML5 para
+              desenvolver páginas web modernas, acessíveis e otimizadas para
+              diferentes dispositivos e navegadores.
+            </p>
+          </div>
+
+          <div class="informacoes css">
+            <div class="logo">
+              <i class="devicon devicon-css3-plain-wordmark" id="css"></i>
+            </div>
+            <h3>CSS3</h3>
+            <p>
+              Possuo habilidades avançadas em CSS3, criando estilos e layouts
+              responsivos, animações e efeitos visuais atrativos. Utilizo
+              técnicas como Flexbox e Grid para organizar o conteúdo de forma
+              eficiente, garantindo uma experiência visualmente agradável e
+              consistente em diversas plataformas e dispositivos.
+            </p>
+          </div>
+
+          <div class="informacoes github">
+            <div class="logo">
+              <i class="devicon devicon-github-original" id="github"></i>
+            </div>
+            <h3>GitHub</h3>
+            <p>
+              Tenho experiência sólida no uso do GitHub, utilizando-o para
+              gerenciar versionamento de código, colaborar em projetos em equipe
+              e contribuir para repositórios open-source. Utilizo recursos como
+              pull requests, branches e issues para organizar e melhorar o fluxo
+              de trabalho, garantindo a qualidade e a integridade do
+              código-fonte.
+            </p>
+          </div>
+
+          <div class="informacoes git">
+            <div class="logo">
+              <i class="devicon devicon-git-plain" id="git"></i>
+            </div>
+            <h3>Git</h3>
+            <p>
+              Possuo habilidades avançadas em Git, utilizando-o para controle de
+              versionamento de código, colaboração em equipe e contribuições
+              para projetos open-source. Gerencio branches, commits e merges de
+              forma eficiente, garantindo a integridade e organização do
+              código-fonte ao longo do desenvolvimento de projetos.
+            </p>
+          </div>
+
+          <div class="informacoes react">
+            <div class="logo">
+              <i class="devicon-react-original" id="react"></i>
+            </div>
+            <h3>React</h3>
+            <p>
+              Eu tenho habilidades em React, o que significa que posso criar
+              interfaces web interativas e dinâmicas. Com o React, consigo
+              desenvolver componentes reutilizáveis que tornam meus aplicativos
+              mais eficientes e escaláveis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projetos section" id="projetos">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>Meus projetos</h2>
+          </div>
+        </div>
+
+        <div class="container-projetos">
+          <div class="projeto">
+            <a href="https://github.com/caua-dev-coder/OnePiece-AboutPage">
+              <img
+                src="./src/imagens/fundo-projetos.jpg"
+                alt="Projeto One Piece"
+              />
+              <h3>Projeto OnePiece</h3>
+              <div class="informacoes-projeto">
+                <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                <p>🔗 Ver no GitHub Pages</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="projeto">
+            <a href="https://github.com/caua-dev-coder/sign-screen">
+              <img
+                src="./src/imagens/fundo-projetos.jpg"
+                alt="Projeto Tela de Login"
+              />
+              <h3>Projeto Tela de Login</h3>
+              <div class="informacoes-projeto">
+                <p>Projeto feito usando React</p>
+                <p>🔗 Ver no GitHub Pages</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="projeto">
+            <a href="https://github.com/caua-dev-coder/GridProjectTest">
+              <img
+                src="./src/imagens/fundo-projetos.jpg"
+                alt="Projeto Bikcraft"
+              />
+              <h3>Projeto BikCraft</h3>
+              <div class="informacoes-projeto">
+                <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                <p>🔗 Ver no GitHub Pages</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="projeto">
+            <a href="https://github.com/caua-dev-coder/site_para_veterinarios">
+              <img
+                src="./src/imagens/fundo-projetos.jpg"
+                alt="Projeto PetLife"
+              />
+              <h3>Projeto PetLife</h3>
+              <div class="informacoes-projeto">
+                <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                <p>🔗 Ver no GitHub Pages</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <h2>Me envie uma mensagem!</h2>
+        <div class="redes-sociais">
+          <a
+            href="https://www.linkedin.com/in/cau%C3%A3-tavella-456607242/"
+            class="outer-shadow"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://api.whatsapp.com/send?phone=5519971265295&text=Eai%20Caua,%20podemos%20conversar?"
+            class="outer-shadow"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a href="https://github.com/caua-dev-coder" class="outer-shadow"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.instagram.com/dev.kiyo/" class="outer-shadow"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
